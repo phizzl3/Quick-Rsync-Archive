@@ -11,5 +11,5 @@ Written for MacOS, but should also work on Linux.
 ## PyInstaller build info
 
 ```bash
-pyinstaller --onefile quick-rsync-archive/src/quick_rsync_archive.py
+pyinstaller -F -n "Quick Rsync Archive" quick-rsync-archive/src/quick_rsync_archive.py
 ```
