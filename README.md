@@ -1,5 +1,4 @@
 # Quick-Rsync-Archive
-
 A script to quickly generate an archive command for Rsync.
 Gets source directory and target directory via drag-and-drop.
 Archives source directory and its contents into target directory.
@@ -7,6 +6,10 @@ Archives source directory and its contents into target directory.
 of archive completion.
 
 Written for MacOS, but should also work on Linux.
+
+## Note 
+
+"Archived On" file doesn't currently work well with target paths with special characters. "()[]", etc.
 
 ## PyInstaller build info
 
