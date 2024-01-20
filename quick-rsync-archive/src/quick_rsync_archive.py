@@ -20,12 +20,11 @@ from modules import (
 )
 
 
-VERSION = "0.2.0"
+VERSION = "0.2.1"
 """Package version."""
 
 WRITE_ARCHIVED_FILE = True
 """Flag to write archived file with date and time to target directory."""
-
 
 clear_screen()
 display_title(VERSION)
