@@ -47,6 +47,6 @@ def display_completed(source, target) -> None:
     print("=" * 65)
     print("\n Archive of:")
     print(f" {source}")
-    print("\n into:")
+    print("\n Into:")
     print(f" {target}")
     print("\n Complete.")
