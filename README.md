@@ -9,7 +9,8 @@ Written for MacOS, but should also work on Linux.
 
 ## Note 
 
-"Archived On" file doesn't currently work well with target paths with special characters. "()[]", etc.
+"Archived On" file doesn't currently work well with target paths with special characters. "()[]", etc.  
+Requires Rsync be installed first.
 
 ## PyInstaller build info
 
