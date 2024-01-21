@@ -20,9 +20,11 @@ def write_backup_log(source, target) -> None:
     # Gets the current date and time to build the log entry.
     date_time = datetime.now()
     current_date_time = date_time.strftime("%m/%d/%Y - %H:%M")
-    log_entry = f"[{source.name}] - Complete - {current_date_time}\n"
+    log_entry = f"[ {source.name} ] - Complete - {current_date_time}\n"
     # Sets the path for the log file.
     log_file = Path(target).resolve() / "Backup_Log.txt"
+    # Corrects the duplicated escape characters.
+    log_file = str(log_file).replace("\\", "")
     # Writes the log entry.
     with open(log_file, "a", encoding="utf-8") as text:
         text.write(log_entry)
