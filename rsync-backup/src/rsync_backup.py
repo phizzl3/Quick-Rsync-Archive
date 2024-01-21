@@ -3,8 +3,8 @@
 A script to quickly generate an archive command for Rsync.
 Gets source directory and target directory via drag-and-drop.
 Archives source directory and its contents into target directory.
-(Optionally) adds a file into the target directory with date and time 
-of archive completion.
+(Optionally) adds a log file into the target directory with date 
+and time of backup completion.
 
 """
 
@@ -15,16 +15,16 @@ from modules import (
     get_target,
     get_source,
     run_rsync_command,
-    write_archived_file,
     clear_screen,
+    write_backup_log,
 )
 
 
 VERSION = "0.3.0"
 """Package version."""
 
-WRITE_ARCHIVED_FILE = True
-"""Flag to write archived file with date and time to target directory."""
+WRITE_BACKUP_LOG = True
+"""Flag to write the backup log file to the target directory."""
 
 clear_screen()
 display_title(VERSION)
@@ -36,5 +36,5 @@ run_rsync_command(SOURCE, TARGET)
 
 display_completed(SOURCE, TARGET)
 
-if WRITE_ARCHIVED_FILE:
-    write_archived_file(SOURCE, TARGET)
+if WRITE_BACKUP_LOG:
+    write_backup_log(SOURCE, TARGET)
