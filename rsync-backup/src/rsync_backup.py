@@ -20,7 +20,7 @@ from modules import (
 )
 
 
-VERSION = "0.2.1"
+VERSION = "0.3.0"
 """Package version."""
 
 WRITE_ARCHIVED_FILE = True
