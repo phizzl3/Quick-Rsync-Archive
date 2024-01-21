@@ -14,5 +14,5 @@ Requires Rsync to be installed first.
 ## PyInstaller build info
 
 ```bash
-pyinstaller -F -n "Quick Rsync Archive" quick-rsync-archive/src/quick_rsync_archive.py
+pyinstaller -F -n "Rsync Backup" rsync-backup/src/rsync_backup.py
 ```
